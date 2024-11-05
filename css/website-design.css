@@ -1,4 +1,8 @@
 
+/***********************
+	WEBSITE COLOR & MARGINS
+***********************/
+
 body {
 	background-color: #8D1020;
 }
@@ -12,9 +16,14 @@ body {
 	padding: 0px;
 }
 
-header, footer {
+header {
 	background-color: black;
 	padding: 15px;
+}
+
+footer {
+	background-color: black;
+	padding: 10px;
 }
 
 .website-content {
@@ -22,10 +31,53 @@ header, footer {
 	padding: 15px;
 }
 
-footer>p, header>p {
+/***********************
+	COMPUTER FLEX GRIDS
+***********************/
+
+@media (min-width: 750px) {
+	footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	.credits {
+		grid-column-start: 1;
+		grid-column-end: 5;
+	}
+}
+
+/***********************
+	MOBILE FLEX GRIDS
+***********************/
+
+@media (max-width: 750px) {
+	footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.credits {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+/***********************
+	FONT, TEXT, ALIGNMENT
+***********************/
+
+.footer-links {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+footer>p {
+	text-align: center;
 	color: white;
 }
 
-.fanclub-logo {
-	height: 50px;
+.footer-links>a {
+	color: white;
 }
