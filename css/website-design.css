@@ -3,17 +3,27 @@ body {
 	background-color: #8D1020;
 }
 
-header, footer {
-	background-color: black;
-}
-
-.website-body {
+.website-background {
 	background-color: white;
 	margin-left: 15%;
 	margin-right: 15%;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding: 0px;
+}
+
+header, footer {
+	background-color: black;
 	padding: 15px;
+}
+
+.website-content {
+	background-color: white;
+	padding: 15px;
+}
+
+footer>p, header>p {
+	color: white;
 }
 
 .fanclub-logo {
