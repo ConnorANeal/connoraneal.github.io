@@ -167,8 +167,79 @@ footer {
 }
 
 /***********************
+	NAVIGATION
+***********************/
+
+.wrapper {
+	display: flex;
+	background-color: transparent;
+}
+
+.wrapper>div, .wrapper>nav {
+	flex: 1;
+	background-color: transparent;
+}
+
+.top-nav {
+	display: flex;
+	background-color: transparent;
+}
+
+.top-nav>a {
+	flex: 1;
+	background-color: #8D1020;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.top-nav>a:hover {
+	background-color: red;
+}
+
+#char-creator-link {
+	flex: 1;
+	background-color: #8D1020;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#char-creator-link:hover {
+	background-color: red;
+}
+
+/***********************
 	FONT, TEXT, ALIGNMENT
 ***********************/
+
+/*
+use vollkorn for body text
+*/
+
+@font-face {
+	font-family: 'Monsterrat Bold';
+	src: url('../fonts/montserrat-font/MontserratBold-DOWZd.ttf');
+}
+
+@font-face {
+	font-family: 'Vollkorn Regular';
+	src: url('../fonts/vollkorn-font/VollkornRegular-51aXv.ttf');
+}
+
+a, p {
+	font-family: "Vollkorn Regular", serif, Arial;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Monsterrat Bold", serif, Arial;
+}
 
 .footer-links {
 	text-align: center;

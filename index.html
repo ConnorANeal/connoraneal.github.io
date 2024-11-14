@@ -6,36 +6,49 @@
 			<link rel="icon" type="image/x-icon" href="images/favicon.png">
 			<link href="css/website-design.css" type="text/css" rel="stylesheet">
 			<link href="css/image-design.css" type="text/css" rel="stylesheet">
-		</head>
-		
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-STN8Q605ZY"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+			
+			<!-- Google tag (gtag.js) -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-STN8Q605ZY"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
 
-		  gtag('config', 'G-STN8Q605ZY');
-		</script>
+			  gtag('config', 'G-STN8Q605ZY');
+			</script>
+			
+		</head>
 		
 		<body>
 			
 			<div class="website-background">
 				
 				<header>
-					<a href="index.html"><img src="images/fanclub-logo.png" alt="D&D Fan Club logo" class="fanclub-logo"></a>
+					<div class="wrapper">
+						<div class="logo-link">
+							<a href="index.html"><img src="images/fanclub-logo.png" alt="D&D Fan Club logo" class="fanclub-logo"></a>
+						</div>
+						<nav class="top-nav">
+							<a href="html/character-creation-guide.html">Character Creation</a>
+							<a href="html/resources.html">Resources</a>
+							<a href="html/about.html">About</a>
+						</nav>
+					</div>
 				</header>
 				
 				<div class="website-body">
 					<div id="character-creator-info">
 						<h2>Ready to create your character?</h2>
-						<p>stuff about the character creator</p>
+						<p>
+						Take a look at our character creator that you can use to create all the D&D characters you can desire!
+						</p>
+						<a id="char-creator-link" href="html/character-creator.html">Create Character</a>
 					</div>
 					
 					<div id="dnd-introduction">
 						<h2>About Dungeons & Dragons</h2>
 						<p>
-						telling you stuff about dnd
+						Dungeons & Dragons is a popular Tabletop Roleplaying Game (TTRPG) created by Wizards of the Coast in 1974. The point of D&D is to tell a story with the aid of your Dungeon Master. This story is told through a hours of dialogue, combat, and dice rolling.
 						</p>
 					</div>
 					
@@ -67,7 +80,7 @@
 						<a href="html/about.html">About</a>
 					</div>
 					<p class="credits">
-					Connor Neal made this
+					Made by Connor Neal
 					</p>
 				</footer>
 				
