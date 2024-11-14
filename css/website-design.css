@@ -7,14 +7,14 @@ body {
 	background-color: #8D1020;
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 750px) {
 	.website-background {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 }
 
-@media (min-width: 750px) {
+@media only screen and (min-width: 750px) {
 	.website-background {
 		margin-left: 10%;
 		margin-right: 10%;
@@ -66,7 +66,7 @@ footer {
 	COMPUTER FLEX GRIDS
 ***********************/
 
-@media (min-width: 880px) {
+@media only screen and (min-width: 880px) {
 	.website-body {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
@@ -102,39 +102,7 @@ footer {
 	MOBILE FLEX GRIDS
 ***********************/
 
-@media (max-width: 880px) {
-	.website-body {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	#character-creator-info {
-		grid-column-start: 1;
-		grid-column-end: 4;
-	}
-	
-	#dnd-introduction {
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
-	
-	.side-nav {
-		grid-column-start: 3;
-		grid-column-end: 4;
-	}
-	
-	footer {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
-	
-	.credits {
-		grid-column-start: 1;
-		grid-column-end: 3;
-	}
-}
-
-@media (max-width: 650px) {
+@media only screen and (orientation: portrait) {
 	.website-body {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
