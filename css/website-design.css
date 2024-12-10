@@ -7,10 +7,10 @@ body {
 	background-color: #8D1020;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (orientation: portrait) {
 	.website-background {
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 
@@ -45,21 +45,34 @@ footer {
 
 #character-creator-info {
 	background-color: #dddddd;
-	height: 300px;
+	height: 240px;
 	text-align: center;
+	padding-top: 50px;
+}
+
+#character-creator-info>p {
+	margin-bottom: 35px;
 }
 
 .website-body>div {
 	padding: 10px;
 }
 
-.side-nav>div {
-	margin: 5px;
+.side-nav {
 	padding: 5px;
+}
+
+.side-nav>div {
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 10px;
 	background-color: #dddddd;
 	border-radius: 15px;
 	border-width: 0px;
 	border-style: solid;
+	max-width: 350px;
+	height: 360px;
+	text-align: center;
 }
 
 /***********************
@@ -72,12 +85,12 @@ footer {
 		grid-template-columns: repeat(6, 1fr);
 	}
 	
-	#character-creator-info {
+	.full-page-span {
 		grid-column-start: 1;
 		grid-column-end: 7;
 	}
 	
-	#dnd-introduction {
+	.paragraph-page-span {
 		grid-column-start: 1;
 		grid-column-end: 5;
 	}
@@ -96,6 +109,63 @@ footer {
 		grid-column-start: 1;
 		grid-column-end: 5;
 	}
+	
+	/*  */
+	
+	#character-class {
+		grid-column-start: 1;
+		grid-column-end: 7;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin-bottom: 20px;
+	}
+	
+	#class-title {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+	
+	#class-selection {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+	
+	#class-description-div {
+		grid-column-start: 2;
+		grid-column-end: 4;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	.website-body {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	.full-page-span {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+	
+	.paragraph-page-span {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+	
+	.side-nav {
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+	
+	footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.credits {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
 }
 
 /***********************
@@ -108,12 +178,12 @@ footer {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	
-	#character-creator-info {
+	.full-page-span {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
 	
-	#dnd-introduction {
+	.paragraph-page-span {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
@@ -138,14 +208,51 @@ footer {
 	NAVIGATION
 ***********************/
 
-.wrapper {
-	display: flex;
-	background-color: transparent;
+@media only screen and (min-width: 880px) {
+	.wrapper {
+		display: flex;
+		background-color: transparent;
+	}
+	.wrapper>div, .wrapper>nav {
+		flex: 1;
+		background-color: transparent;
+	}
 }
 
-.wrapper>div, .wrapper>nav {
-	flex: 1;
-	background-color: transparent;
+@media only screen and (max-width: 880px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		background-color: transparent;
+	}
+	.wrapper>div {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background-color: transparent;
+	}
+	.wrapper>nav {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		background-color: transparent;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		background-color: transparent;
+	}
+	.wrapper>div {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		background-color: transparent;
+	}
+	.wrapper>nav {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		background-color: transparent;
+	}
 }
 
 .top-nav {
@@ -180,6 +287,21 @@ footer {
 }
 
 #char-creator-link:hover {
+	background-color: red;
+}
+
+.side-nav-link {
+	flex: 1;
+	background-color: #8D1020;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.side-nav-link:hover {
 	background-color: red;
 }
 

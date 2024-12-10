@@ -10,11 +10,11 @@
 			<!-- Google tag (gtag.js) -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-STN8Q605ZY"></script>
 			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-
-			  gtag('config', 'G-STN8Q605ZY');
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				
+				gtag('config', 'G-STN8Q605ZY');
 			</script>
 			
 		</head>
@@ -37,7 +37,7 @@
 				</header>
 				
 				<div class="website-body">
-					<div id="character-creator-info">
+					<div id="character-creator-info" class="full-page-span">
 						<h2>Ready to create your character?</h2>
 						<p>
 						Take a look at our character creator that you can use to create all the D&D characters you can desire!
@@ -45,23 +45,29 @@
 						<a id="char-creator-link" href="html/character-creator.html">Create Character</a>
 					</div>
 					
-					<div id="dnd-introduction">
-						<h2>About Dungeons & Dragons</h2>
-						<p>
-						Dungeons & Dragons is a popular Tabletop Roleplaying Game (TTRPG) created by Wizards of the Coast in 1974. The point of D&D is to tell a story with the aid of your Dungeon Master. This story is told through a hours of dialogue, combat, and dice rolling.
-						</p>
+					<div class="paragraph-page-span">
+						<div id="dnd-introduction">
+							<h2>About Dungeons & Dragons</h2>
+							<p>
+							Dungeons & Dragons is a popular Tabletop Roleplaying Game (TTRPG) created by Wizards of the Coast in 1974. The point of D&D is to tell a story with the aid of your Dungeon Master. This story is told through a hours of dialogue, combat, and dice rolling.
+							</p>
+						</div>
 					</div>
 					
 					<nav class="side-nav">
 						<div class="character-creation-redirect">
+							<img src="images/template.png" alt="template image" class="side-nav-image">
 							<p>
-							telling about character creation guide
+							Are you new to creating a character? Fear not! Take a look at our in-depth guide on how to create a character for your first Dungeons & Dragons campaign!
 							</p>
+							<a class="side-nav-link" href="html/character-creation-guide.html">Character Creation</a>
 						</div>
 						<div class="resources-redirect">
+							<img src="images/template.png" alt="template image" class="side-nav-image">
 							<p>
-							telling about dnd resources
+							Looking for resources to help you run your own campaign? Or are you trying to find others who share your passion for D&D? Check out other members of the online D&D community!
 							</p>
+							<a class="side-nav-link" href="html/resources.html">Resources</a>
 						</div>
 					</nav>
 				</div>

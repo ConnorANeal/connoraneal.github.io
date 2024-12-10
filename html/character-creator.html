@@ -6,6 +6,7 @@
 			<link rel="icon" type="image/x-icon" href="../images/favicon.png">
 			<link href="../css/website-design.css" type="text/css" rel="stylesheet">
 			<link href="../css/image-design.css" type="text/css" rel="stylesheet">
+			<script type="text/javascript" src="../js/javascript.js"></script>
 			
 			<!-- Google tag (gtag.js) -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-STN8Q605ZY"></script>
@@ -37,9 +38,51 @@
 				</header>
 				
 				<div class="website-body">
-					<p>
-					CHARACTER CREATOR
-					</p>
+					
+					<div id="character-statistics" class="full-page-span">
+						<h2>Character Stats</h2>
+						<p>testing this</p>
+					</div>
+					
+					<div id="character-origin" class="full-page-span">
+						<h2>Character Species</h2>
+						<p>testing this</p>
+						
+						<h2>Character Background</h2>
+						<p>testing this</p>
+					</div>
+					
+					<div id="character-class">
+						<h2 id="class-title">Character Class</h2>
+						
+						<div id="class-selection">
+							<p>testing this</p>
+							
+							<select id="chosen-class" name="selected-class" onchange="selectClass()">
+								<option value="choose"> - Choose a class - </option>
+								<option value="artificer">Artificer</option>
+								<option value="barbarian">Barbarian</option>
+								<option value="bard">Bard</option>
+								<option value="cleric">Cleric</option>
+								<option value="druid">Druid</option>
+								<option value="fighter">Fighter</option>
+								<option value="monk">Monk</option>
+								<option value="paladin">Paladin</option>
+								<option value="ranger">Ranger</option>
+								<option value="rogue">Rogue</option>
+								<option value="sorcerer">Sorcerer</option>
+								<option value="warlock">Warlock</option>
+								<option value="wizard">Wizard</option>
+							</select>
+						</div>
+						
+						<div id="class-description-div">
+							<h2 id="class-description-title">Class Description -</h2>
+							<p id="class-description">Pick a class to see its description.</p>
+						</div>
+						
+					</div>
+					
 				</div>
 				
 				<footer>
