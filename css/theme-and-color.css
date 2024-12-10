@@ -1,0 +1,178 @@
+
+/***********************
+	FONT RULES
+***********************/
+
+@font-face {
+	font-family: 'Monsterrat Bold';
+	src: url('../fonts/montserrat-font/MontserratBold-DOWZd.ttf');
+}
+
+@font-face {
+	font-family: 'Vollkorn Regular';
+	src: url('../fonts/vollkorn-font/VollkornRegular-51aXv.ttf');
+}
+
+a, p {
+	font-family: "Vollkorn Regular", serif, Arial;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Monsterrat Bold", serif, Arial;
+}
+
+/***********************
+	WEBSITE THEME
+***********************/
+
+body {
+	background-color: #8D1020;
+}
+
+.website-background {
+	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+header {
+	background-color: black;
+	padding: 15px;
+}
+
+footer {
+	background-color: black;
+	padding: 10px;
+}
+
+.website-content {
+	background-color: white;
+	padding: 15px;
+}
+
+.footer-links {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+footer>p {
+	text-align: center;
+	color: white;
+}
+
+.footer-links>a {
+	color: white;
+}
+
+/***********************
+	FRONT PAGE CREATOR PROMPT
+***********************/
+
+#character-creator-info {
+	background-color: #dddddd;
+	height: 240px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#character-creator-info>p {
+	margin-bottom: 35px;
+}
+
+#char-creator-link {
+	flex: 1;
+	background-color: #8D1020;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#char-creator-link:hover {
+	background-color: red;
+}
+
+/***********************
+	TOP NAVIGATION
+***********************/
+
+.top-nav {
+	display: flex;
+	background-color: transparent;
+}
+
+.top-nav>a {
+	flex: 1;
+	background-color: #8D1020;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.top-nav>a:hover {
+	background-color: red;
+}
+
+/***********************
+	SIDE NAVIGATION
+***********************/
+
+.website-body>div {
+	padding: 10px;
+}
+
+.side-nav {
+	padding: 5px;
+}
+
+.side-nav>div {
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #dddddd;
+	border-radius: 15px;
+	border-width: 0px;
+	border-style: solid;
+	max-width: 350px;
+	height: 360px;
+	text-align: center;
+}
+
+.side-nav-link {
+	flex: 1;
+	background-color: #8D1020;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.side-nav-link:hover {
+	background-color: red;
+}
+
+/***********************
+	CHARACTER CREATION
+***********************/
+
+.stat-input-box {
+	width: 50px;
+	height: 25px;
+}
+
+.stat-input-divs {
+	text-align: center;
+}
+
+.stat-input-divs>p {
+	font-weight: bold;
+}
