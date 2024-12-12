@@ -1,6 +1,6 @@
 # D&D Fan Club Website - CS 160 Final Project
 
-This project is unfinished an is still in active development. Nothing you see is final and is subject to change.
+This project is unfinished and is still in active development. Nothing you see is final and is subject to change.
 
 Follow the URL to access the website. If this repository is no longer being hosted as a website on GitHub, then download the files and run the index.html file using your favorite web browser.
 
