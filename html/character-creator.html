@@ -8,7 +8,9 @@
 			<link href="../css/responsive-web-design.css" type="text/css" rel="stylesheet">
 			<link href="../css/theme-and-color.css" type="text/css" rel="stylesheet">
 			
-			<script type="text/javascript" src="../js/javascript.js"></script>
+			<script type="text/javascript" src="../js/selectClass.js"></script>
+			<script type="text/javascript" src="../js/selectSpecies.js"></script>
+			<script type="text/javascript" src="../js/selectBackground.js"></script>
 			
 			<!-- Google tag (gtag.js) -->
 			<script async src="https://www.googletagmanager.com/gtag/js?id=G-STN8Q605ZY"></script>
@@ -41,15 +43,60 @@
 				
 				<div class="website-body">
 					
-					<div id="character-origin" class="full-page-span">
-						<h2>Character Species</h2>
-						<p>pick a species to play as, some of them determine what stat bonuses you receive</p>
+					<div id="character-origin" class="creator-grids">
 						
-						<h2>Character Background</h2>
-						<p>determine what your character's profession, hobby, or occupation is</p>
+						<!--  SPECIES SELECTION  -->
+						<h2 id="species-title">Character Species</h2>
+						
+						<div id="species-selection">
+							<p>pick a species to play as, some of them determine what stat bonuses you receive</p>
+							
+							<select id="chosen-species" name="selected-species" onchange="selectSpecies()">
+								<option value="choose"> - Choose a species - </option>
+								<option value="dwarf">Dwarf</option>
+								<option value="elf">Elf</option>
+								<option value="halfling">Halfling</option>
+								<option value="human">Human</option>
+								<option value="dragonborn">Dragonborn</option>
+								<option value="gnome">Gnome</option>
+								<option value="half-elf">Half-Elf</option>
+								<option value="half-orc">Half-Orc</option>
+								<option value="tiefling">Tiefling</option>
+							</select>
+						</div>
+						
+						<div id="species-description-div">
+							<h2 id="species-description-title">Species Description -</h2>
+							<p id="species-description">Pick a species to see its description.</p>
+						</div>
+						
+						<!--  BACKGROUND SELECTION  -->
+						<h2 id="background-title">Character Background</h2>
+						
+						<div id="background-selection">
+							<p>determine what your character's profession, hobby, or occupation is</p>
+							
+							<select id="chosen-background" name="selected-background" onchange="selectBackground()">
+								<option value="choose"> - Choose a background - </option>
+								<option value="acolyte">Acolyte</option>
+								<option value="criminal">Criminal</option>
+								<option value="folk-hero">Folk Hero</option>
+								<option value="noble">Noble</option>
+								<option value="sage">Sage</option>
+								<option value="soldier">Soldier</option>
+							</select>
+						</div>
+						
+						<div id="background-description-div">
+							<h2 id="background-description-title">Background Description -</h2>
+							<p id="background-description">Pick a background to see its description.</p>
+						</div>
+						
 					</div>
 					
 					<div id="character-statistics" class="full-page-span">
+						
+						<!--  STAT INPUTS  -->
 						<h2>Character Stats</h2>
 						<p>roll your stats (they should all be 3-18)</p>
 						<div id="stat-inputs">
@@ -87,11 +134,14 @@
 						</div>
 					</div>
 					
-					<div id="character-class">
+					<div id="character-class" class="creator-grids">
+						
+						<!--  CLASS SELECTION  -->
 						<h2 id="class-title">Character Class</h2>
 						
 						<div id="class-selection">
-							<p>testing this</p>
+							<p>Now you can pick your class. Your class determines what kind of firepower and utility you bring to combat. Classes generally fall into three categories: Frontline, Half Caster, and Full Caster.<br>
+							Frontline classes specialize in fighting enemies up close relying on their strength and weapons to deal damage. Full Casters generally have less hit points, but deal a lot of damage or produce useful effects using spells. Half Casters take some of the utility of spellcasting and use it to power up their weapon attacks.</p>
 							
 							<select id="chosen-class" name="selected-class" onchange="selectClass()">
 								<option value="choose"> - Choose a class - </option>

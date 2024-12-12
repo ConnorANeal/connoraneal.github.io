@@ -43,27 +43,28 @@
 	}
 	
 	/* CHARACTER CREATOR PAGE */
-	#character-class {
+	.creator-grids {
 		grid-column-start: 1;
 		grid-column-end: 7;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		margin-bottom: 20px;
 	}
 	
-	#class-title {
+	#class-title, #species-title, #background-title {
 		grid-column-start: 1;
 		grid-column-end: 4;
 	}
 	
-	#class-selection {
+	#class-selection, #species-selection, #background-selection {
 		grid-column-start: 1;
-		grid-column-end: 2;
+		grid-column-end: 3;
 	}
 	
-	#class-description-div {
-		grid-column-start: 2;
-		grid-column-end: 4;
+	#class-description-div, #species-description-div, #background-description-div {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		margin-left: 20px;
 	}
 	
 	#stat-inputs {
@@ -116,7 +117,7 @@
 	}
 	
 	/* CHARACTER CREATOR PAGE */
-	#character-class {
+	.creator-grids {
 		grid-column-start: 1;
 		grid-column-end: 2;
 		display: grid;
@@ -124,17 +125,17 @@
 		margin-bottom: 20px;
 	}
 	
-	#class-title {
+	#class-title, #species-title, #background-title {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
 	
-	#class-selection {
+	#class-selection, #species-selection, #background-selection {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
 	
-	#class-description-div {
+	#class-description-div, #species-description-div, #background-description-div {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
@@ -186,7 +187,7 @@
 	}
 	
 	/* CHARACTER CREATOR PAGE */
-	#character-class {
+	.creator-grids {
 		grid-column-start: 1;
 		grid-column-end: 2;
 		display: grid;
@@ -194,17 +195,17 @@
 		margin-bottom: 20px;
 	}
 	
-	#class-title {
+	#class-title, #species-title, #background-title {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
 	
-	#class-selection {
+	#class-selection, #species-selection, #background-selection {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}
 	
-	#class-description-div {
+	#class-description-div, #species-description-div, #background-description-div {
 		grid-column-start: 1;
 		grid-column-end: 2;
 	}

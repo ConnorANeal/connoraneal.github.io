@@ -18,7 +18,7 @@ function selectClass() {
 		/* ARTIFICER */
 		
 		title.innerHTML = 'Class Description - Artificer';
-		description.innerHTML = 'This is what an artificer is!';
+		description.innerHTML = 'An artificer is a half casting class that specializes in the use of magical items. Due to the versatility of an artificer\'s different abilities, they are capable of being either a front line combatant or a support player.';
         
     } else if (myValue == "barbarian") {
 		/* BARBARIAN */
@@ -109,12 +109,5 @@ function selectClass() {
 	
 	parent.appendChild(title);
 	parent.appendChild(description);
-	
-}
-
-
-function selectSpecies() {
-	
-	
 	
 }
