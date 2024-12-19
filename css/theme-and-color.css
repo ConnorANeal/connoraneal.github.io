@@ -13,7 +13,7 @@
 	src: url('../fonts/vollkorn-font/VollkornRegular-51aXv.ttf');
 }
 
-a, p {
+a, p, select, option {
 	font-family: "Vollkorn Regular", serif, Arial;
 }
 
@@ -175,4 +175,16 @@ footer>p {
 
 .stat-input-divs>p {
 	font-weight: bold;
+}
+
+#character-statistics {
+	margin-bottom: 40px;
+}
+
+.creator-grids, .full-page-span, .paragraph-page-span {
+	margin-left: 10px;
+}
+
+#character-creator-info {
+	margin-left: 0px;
 }

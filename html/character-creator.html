@@ -43,13 +43,47 @@
 				
 				<div class="website-body">
 					
+					<div id="character-class" class="creator-grids">
+						
+						<!--  CLASS SELECTION  -->
+						<h2 id="class-title">Character Class</h2>
+						
+						<div id="class-selection">
+							<p>First, you can pick your class. Your class determines what kind of firepower and utility you bring to combat. Classes generally fall into three categories: Frontline, Half Caster, and Full Caster.<br>
+							Frontline classes specialize in fighting enemies up close relying on their strength and weapons to deal damage. Full Casters generally have less hit points, but deal a lot of damage or produce useful effects using spells. Half Casters take some of the utility of spellcasting and use it to power up their weapon attacks.</p>
+							
+							<select id="chosen-class" name="selected-class" onchange="selectClass()">
+								<option value="choose"> - Choose a class - </option>
+								<option value="artificer">Artificer</option>
+								<option value="barbarian">Barbarian</option>
+								<option value="bard">Bard</option>
+								<option value="cleric">Cleric</option>
+								<option value="druid">Druid</option>
+								<option value="fighter">Fighter</option>
+								<option value="monk">Monk</option>
+								<option value="paladin">Paladin</option>
+								<option value="ranger">Ranger</option>
+								<option value="rogue">Rogue</option>
+								<option value="sorcerer">Sorcerer</option>
+								<option value="warlock">Warlock</option>
+								<option value="wizard">Wizard</option>
+							</select>
+						</div>
+						
+						<div id="class-description-div">
+							<h2 id="class-description-title">Class Description -</h2>
+							<p id="class-description">Pick a class to see its description.</p>
+						</div>
+						
+					</div>
+					
 					<div id="character-origin" class="creator-grids">
 						
 						<!--  SPECIES SELECTION  -->
 						<h2 id="species-title">Character Species</h2>
 						
 						<div id="species-selection">
-							<p>pick a species to play as, some of them determine what stat bonuses you receive</p>
+							<p>Second, determine what species your character will be. Different species will give different abilities and they might come from different parts of the world. Keep these things in mind when thinking of what kind of character you are wanting to play.</p>
 							
 							<select id="chosen-species" name="selected-species" onchange="selectSpecies()">
 								<option value="choose"> - Choose a species - </option>
@@ -74,7 +108,7 @@
 						<h2 id="background-title">Character Background</h2>
 						
 						<div id="background-selection">
-							<p>determine what your character's profession, hobby, or occupation is</p>
+							<p>Next, determine what your character's background will be. This generally represents your character's occupation, lifestyle, field of study, or similar effect.</p>
 							
 							<select id="chosen-background" name="selected-background" onchange="selectBackground()">
 								<option value="choose"> - Choose a background - </option>
@@ -98,7 +132,8 @@
 						
 						<!--  STAT INPUTS  -->
 						<h2>Character Stats</h2>
-						<p>roll your stats (they should all be 3-18)</p>
+						<p>Finally, you can insert your stats here. In case you do not know what your stats should be, here's how to determine your stats.<br>
+						Start by rolling four d6 dice. Remove the die that rolled the lowest. Add together the three remaining dice, and that is one of your stats. You get to pick which attribute that stat is applied to. Repeat this method for all six stat attributes. No stat should end up being lower than 3 or higher than 18 after adding up the dice.</p>
 						<div id="stat-inputs">
 							
 							<div id="strength-div" class="stat-input-divs">
@@ -134,39 +169,7 @@
 						</div>
 					</div>
 					
-					<div id="character-class" class="creator-grids">
-						
-						<!--  CLASS SELECTION  -->
-						<h2 id="class-title">Character Class</h2>
-						
-						<div id="class-selection">
-							<p>Now you can pick your class. Your class determines what kind of firepower and utility you bring to combat. Classes generally fall into three categories: Frontline, Half Caster, and Full Caster.<br>
-							Frontline classes specialize in fighting enemies up close relying on their strength and weapons to deal damage. Full Casters generally have less hit points, but deal a lot of damage or produce useful effects using spells. Half Casters take some of the utility of spellcasting and use it to power up their weapon attacks.</p>
-							
-							<select id="chosen-class" name="selected-class" onchange="selectClass()">
-								<option value="choose"> - Choose a class - </option>
-								<option value="artificer">Artificer</option>
-								<option value="barbarian">Barbarian</option>
-								<option value="bard">Bard</option>
-								<option value="cleric">Cleric</option>
-								<option value="druid">Druid</option>
-								<option value="fighter">Fighter</option>
-								<option value="monk">Monk</option>
-								<option value="paladin">Paladin</option>
-								<option value="ranger">Ranger</option>
-								<option value="rogue">Rogue</option>
-								<option value="sorcerer">Sorcerer</option>
-								<option value="warlock">Warlock</option>
-								<option value="wizard">Wizard</option>
-							</select>
-						</div>
-						
-						<div id="class-description-div">
-							<h2 id="class-description-title">Class Description -</h2>
-							<p id="class-description">Pick a class to see its description.</p>
-						</div>
-						
-					</div>
+					<!--  ADD SUBMIT BUTTON  -->
 					
 				</div>
 				
