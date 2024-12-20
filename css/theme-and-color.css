@@ -188,3 +188,18 @@ footer>p {
 #character-creator-info {
 	margin-left: 0px;
 }
+
+.external-link-button {
+	flex: 1;
+	background-color: #8D1020;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#entertainment-section, #resources-section {
+	margin-bottom: 30px;
+}
