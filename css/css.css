@@ -13,7 +13,18 @@ header {
 
 h1>a {
 	text-decoration: none;
-	color: black;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+h1>a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #444444;
+	border-radius: 5px;
+	padding: 10px;
 }
 
 .website-body {
@@ -26,6 +37,8 @@ h1>a {
 
 footer {
 	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .container {
@@ -50,84 +63,53 @@ h1, h2 {
 	text-align: center;
 }
 
-.gallery-item {
-	width: 250px;
-	border-radius: 5px;
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery>a {
+	margin: 10px;
+}
+
+.gallery-col1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.gallery-col2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.gallery-col3 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.gallery-col1>img {
+	border-radius: 10px;
 	cursor: pointer;
-	transition: 0.3s;
+	width: 100%;
 }
 
-
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.gallery-col2>img {
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100%;
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+.gallery-col3>img {
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100%;
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+.art-display>p {
+	text-align: center;
+	font-size: 28px;
 }
 
-/* Add Animation */
-.modal-content, #caption {  
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform: scale(0.1)} 
-  to {transform: scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+.image-link>img {
+	width: 100%;
 }
