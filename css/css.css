@@ -87,6 +87,8 @@ h1, h2 {
 	grid-column-end: 4;
 }
 
+/* f */
+
 .gallery-col1>img {
 	border-radius: 10px;
 	cursor: pointer;
